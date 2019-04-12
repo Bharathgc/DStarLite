@@ -1,0 +1,64 @@
+\documentclass[conference]{IEEEtran}
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+\begin{document}
+
+\title{Lifelong Planning: A Comparative Evaluation of Route Replanning In Partially-Observable Domains}
+
+\author{\IEEEauthorblockN{Hans Walter Behrens, Bharath Gunari, Rishabh Hatgadkar, Nicholas Martinez}
+\IEEEauthorblockA{\textit{Arizona State University}\\
+	Tempe, Arizona 85281--3673\\
+	\{\texttt{1211230537, 1213217679, 1215005506, 1207024399}\} \\
+\texttt{\{hwb, bgunari, rhatgadk, nlmarti4\}@asu.edu}}
+%\and
+%\IEEEauthorblockN{Bharath Gunari}
+%\IEEEauthorblockA{\textit{Arizona State University} \\
+%\texttt{@asu.edu}}
+%\and
+%\IEEEauthorblockN{Rishabh Hatgadkar}
+%\IEEEauthorblockA{\textit{Arizona State University} \\
+%\texttt{@asu.edu}}
+%\and
+%\IEEEauthorblockN{Nicholas Martinez}
+%\IEEEauthorblockA{\textit{Arizona State University} \\
+%\texttt{@asu.edu}}
+}
+
+\maketitle
+
+\begin{abstract}
+Route-finding has historically played an important role within computer science, but often assumes that the region or graph to be traversed is fully known. In practice, this requirement can prove difficult to satisfy; no domain better illustrates this challenge than robotics. As autonomous agents traverse unknown environments, their route-finding must adapt to incorporate new information as it becomes available. In this work, we explore several route-finding algorithms from the literature, including lifelong-planning A*, D* Lite, and naive-replanning A*. We discuss our implementations of these approaches, and assess their strengths, weaknesses, and appropriateness for various scenarios. We conclude by comparing their relative efficacy for autonomous agent pathfinding in partially-observable terrain, as represented by the Pacman pathfinding problem.
+\end{abstract}
+
+\begin{IEEEkeywords}
+path planning, shortest path problem, robot learning, observability
+\end{IEEEkeywords}
+
+\input{1intro}
+
+\input{2background}
+
+\input{3implementation}
+
+\input{4evaluation}
+
+\input{5conclusion}
+
+\input{6teamnotes}
+
+
+\section*{Acknowledgment}
+% better safe than sorry!
+We would like to thank Mehrdad Zaker Shahrak and Yu Zhang for sharing their valuable insights for this work.
+
+\bibliographystyle{ieeetr}
+\bibliography{refs.bib}
+
+\end{document}
