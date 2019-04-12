@@ -1,5 +1,5 @@
 # DStarLite
-An experimental Python implementation based on the D* Lite Paper. Project setup is identical to that by the original Pacman  implementation used in class. All commands should therefore be run from the `pacman_domain` directory. Note that valgrind may need to be installed to replicate memory usage statistics.
+An experimental Python implementation based on the D* Lite Paper. Project setup is identical to that by the original Berkley Pacman  implementation used in class. All commands should therefore be run from the `pacman_domain` directory. Note that valgrind may need to be installed to replicate memory usage statistics.
 
 Modified files are as follows:
 
